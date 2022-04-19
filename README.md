@@ -1,4 +1,4 @@
-# ATCPanel
+# ATC Module
 
 How to upload Firmware to the Core Flight Tech. B737 ATC?
 
