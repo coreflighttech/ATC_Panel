@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>ATC_v6</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <MultiplexerDriver Name="MultiplexerDriver" PinSx="16 15 14 18" />
+  <Output Name="Fail_Led" Pin="19" />
+  <InputMultiplexer Name="MUX1" DataPin="17" NumBytes="1">
+    <Selector Name="MultiplexerDriver" PinSx="16 15 14 18" />
+  </InputMultiplexer>
+  <Encoder Name="LEFT_ENC_INNER" PinLeft="13" PinRight="12" EncoderType="0" />
+  <Encoder Name="LEFT_ENC_OUTER" PinLeft="10" PinRight="11" EncoderType="0" />
+  <Encoder Name="RIGHT_ENC_INNER" PinLeft="7" PinRight="8" EncoderType="0" />
+  <Encoder Name="RIGHT_ENC_OUTER" PinLeft="5" PinRight="6" EncoderType="0" />
+  <LedModule Name="Display" DinPin="3" ClsPin="4" ClkPin="2" Brightness="15" NumModules="1" />
+  <Output Name="BACKLIGHT" Pin="9" />
+</Config>
