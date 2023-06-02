@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fbbec3ed-672a-4347-acef-42022cddb42d">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_FAIL_LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x65CE" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="ATC_v7/ SN-707-f1b" trigger="normal" pin="CPT_ATC_FAIL_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="de1ca47a-270a-4cdb-82d3-111daa2da8da">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0354" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <modifiers>
+          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="ATC_v7/ SN-707-f1b" trigger="normal" ledAddress="CPT_ATC_DISPLAY" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="2a5e5cea-5e1f-4546-a11c-f38e08c91202">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_LEFT ENC-INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_L_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="PmdgEventIdInputAction" eventId="70436" param="536870912" aircraft="B737" />
+          <onLeftFast />
+          <onRight type="PmdgEventIdInputAction" eventId="70436" param="2147483648" aircraft="B737" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5e5753e-4c6f-494e-bf0b-168bc76813b7">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_LEFT ENC-OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_L_OUT_EN" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="PmdgEventIdInputAction" eventId="70437" param="536870912" aircraft="B737" />
+          <onLeftFast />
+          <onRight type="PmdgEventIdInputAction" eventId="70437" param="2147483648" aircraft="B737" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3981ab5c-3b8c-4bf3-8531-6f1fcc726023">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_RIGHT ENC_INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_R_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="PmdgEventIdInputAction" eventId="70439" param="536870912" aircraft="B737" />
+          <onLeftFast />
+          <onRight type="PmdgEventIdInputAction" eventId="70439" param="2147483648" aircraft="B737" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1820eebf-0cfc-47af-9aca-e8b71d101134">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_RIGHT ENC_OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_R_OUT_EN" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="PmdgEventIdInputAction" eventId="70440" param="536870912" aircraft="B737" />
+          <onLeftFast />
+          <onRight type="PmdgEventIdInputAction" eventId="70440" param="2147483648" aircraft="B737" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8759a04-9c6e-4310-8568-00d9853ec3b9">
+      <active>false</active>
+      <description>P3D_PMDG737_ATC_IDENT - DEACTIVE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="-" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c66f1c17-73bd-43ae-a537-dbc0f972ecf5">
+      <active>false</active>
+      <description>P3D_PMDG737_ATC_XPNDR SWITCH - DEACTIVE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="-" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2bfa214-dcce-41eb-b00f-e6389fdfebce">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_STANBY - ROT SW.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_MUX1" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="7">
+          <onPress type="PmdgEventIdInputAction" eventId="70432" param="0" aircraft="B737" />
+          <onRelease />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="634ec196-1605-42de-ae4e-3fed8a86f0d8">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_ALT - ROT SW.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_MUX1" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="6">
+          <onPress type="PmdgEventIdInputAction" eventId="70432" param="1" aircraft="B737" />
+          <onRelease />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42d66756-98cd-40f1-b690-88acf0695b5f">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_XPNDR  - ROT SW.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_MUX1" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="5">
+          <onPress type="PmdgEventIdInputAction" eventId="70432" param="2" aircraft="B737" />
+          <onRelease />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3c8e7c6-5852-4955-b53a-c2acf9f97ae4">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_TA_ONLY - ROT SW.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_MUX1" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="4">
+          <onPress type="PmdgEventIdInputAction" eventId="70432" param="3" aircraft="B737" />
+          <onRelease />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6d374e24-28f6-47f1-b979-40a0e67248d6">
+      <active>true</active>
+      <description>P3D_PMDG737_ATC_TA/RA - ROT SW.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC_v7/ SN-707-f1b" name="CPT_ATC_MUX1" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="3">
+          <onPress type="PmdgEventIdInputAction" eventId="70432" param="4" aircraft="B737" />
+          <onRelease />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
