@@ -5,9 +5,7 @@ Baud Rate is 115200
 R03b --- V7 Initial Release
 
 Internal devices features
-- Turn on/off backlight by pressing IDENT + Right Push
-- Show info and firmware version by pressing IDENT + Left Push
 - Backlight brightness level setting by pressing IDENT and turning Right outer encoder
 - Display brightness level setting by pressing IDENT and turning Right inner encoder
-- Soft reset by pressing Left + Right Push
+
 
