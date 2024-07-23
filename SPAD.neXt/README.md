@@ -1,8 +1,12 @@
 Special thanks to The1L2P (Discord ID: 1L2P#5598) for his excellent work!
 
-Baud Rate is 115200
+# 2024-07-23 R20 release for SPAD 0.9.18.4+ 
 
-R03b --- V7 Initial Release
+CFT_737_ATC_V7_SPAD_1L2P_R20_115200.ino.hex
+
+- Serial device init improvements
+
+Baud Rate is 115200
 
 Internal devices features
 - Backlight brightness level setting by pressing IDENT and turning Right outer encoder
